@@ -34,8 +34,8 @@ from tenacity import retry, stop_after_attempt, wait_random_exponential
 
 #todo
 
-MAX_SECTION_LENGTH = 2000 #zmienić na 1500
-SENTENCE_SEARCH_LIMIT = 200 #buffer na szukanie naturalnego końca?
+MAX_SECTION_LENGTH = 2000 
+SENTENCE_SEARCH_LIMIT = 200 
 SECTION_OVERLAP = 200
 
 open_ai_token_cache = {}
