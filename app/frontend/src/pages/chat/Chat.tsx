@@ -186,7 +186,7 @@ const Chat = () => {
                     <div className={styles.chatInput}>
                         <QuestionInput
                             clearOnSend
-                            placeholder="Wprowadź nowe pytanie (np. czy możliwe jest przeniesienie kredytu do Alior Banku?)"
+                            placeholder="Wprowadź nowe pytanie (np. Ile kosztuje Konto Jakże Osobiste?)"
                             disabled={isLoading}
                             onSend={question => makeApiRequest(question)}
                         />
