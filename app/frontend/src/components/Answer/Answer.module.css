@@ -1,4 +1,6 @@
 .answerContainer {
+    inline-size: 310px;
+    overflow-wrap: break-word;
     padding: 20px;
     background: rgb(249, 249, 249);
     border-radius: 8px;
