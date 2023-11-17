@@ -9,11 +9,11 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "Co to jest Karta Wirtualna?",
-        value: "Co to jest Karta Wirtualna?"
+        text: "Jak odblokować bankowość internetową?",
+        value: "Jak odblokować bankowość internetową?"
     },
-    { text: "Do jakiej sumy mogę wziąć pożyczkę internetową?", value: "Do jakiej sumy mogę wziąć pożyczkę internetową?" },
-    { text: "Jak zgłosić reklamację?", value: "Jak zgłosić reklamację?" }
+    { text: "Jak złożyć wniosek o pożyczkę gotówkową?", value: "Jak złożyć wniosek o pożyczkę gotówkową?" },
+    { text: "Ile kosztuje Konto Jakże Osobiste?", value: "Ile kosztuje Konto Jakże Osobiste?" }
 ];
 
 interface Props {
