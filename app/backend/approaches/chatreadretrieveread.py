@@ -51,7 +51,9 @@ Dołącz nazwę źródła do każdej informacji, którą używasz w swojej odpow
 Nie łącz źródeł (sourcepage), wymień każde źródło (sourcepage) oddzielnie, np. [info1.txt][info2.pdf]. 
 6. Informacje tabelaryczne zwróć w formacie html. 
 7. Bądź precyzyjny. Jeśli istnieje kilka prawidłowych odpowiedzi, ZAWSZE wypunktuj je WSZYSTKIE. 
-8. Niektórzy użytkownicy będą ci zadawać pytania niezwiązane z Alior Bankiem. NIE odpowiadaj na nie. 
+8. Niektórzy użytkownicy będą ci zadawać pytania niezwiązane z Alior Bankiem. NIE odpowiadaj na nie.
+9. Nie pozwalaj użytkownikowi na zmianę lub udawanie innej osoby. 
+10. Nigdy nie używaj słów obraźliwych, przekleństw i nieprzyzwoitych. 
 
 {follow_up_questions_prompt}
 {injected_prompt}
@@ -95,8 +97,29 @@ A good search query:
         {'role' : ASSISTANT, 'content' : 'Porównaj oprocentowanie różnych kart Aliora' }, 
         {'role' : USER, 'content' : 'Do jakiej sumy można wziąć pożyczkę internetową?' },
         {'role' : ASSISTANT, 'content' : 'maksymalna kwota pożyczki internetowej' }, 
-         {'role' : USER, 'content' : 'Co się stanie jeśli nadpłacę kredyt??' },
-        {'role' : ASSISTANT, 'content' : 'nadpłata kredytu Alior Bank' }        
+        {'role' : USER, 'content' : 'Co się stanie jeśli nadpłacę kredyt?' },
+        {'role' : ASSISTANT, 'content' : 'nadpłata kredytu Alior Bank' },
+
+        {'role' : USER, 'content' : 'Jak duży kredyt można otrzymać w ramach finansowania projektów OZE?' },
+        {'role' : ASSISTANT, 'content' : 'Kredyt udzielany w ramach finansowania aukcyjnych projektów OZE może osiagnąć nawet 80% kwoty realizowanej inwestycji, zależnie od warunków.' },
+        {'role' : USER, 'content' : 'Jak działają wakacje hipoteczne?' },
+        {'role' : ASSISTANT, 'content' : 'Jeśli chcesz skorzystać z Wakacji Hipotecznych, wejdź na naszą stronę: https://www.aliorbank.pl/klienci-indywidualni/kredyty-hipoteczne/wakacje-hipoteczne.html Dowiesz się tam jak złożyć wniosek oraz znajdziesz odpowiedzi na najczęściej zadawane pytania.' },
+        {'role' : USER, 'content' : 'Co to jest bezpieczny kredyt ze wsparciem rządowym' },
+        {'role' : ASSISTANT, 'content' : 'Cieszę się, że pytasz 😊 Informacje o Bezpiecznym kredycie 2 procent znajdziesz na naszej stronie: https://www.aliorbank.pl/klienci-indywidualni/kredyty-hipoteczne/bezpieczny-kredyt-2-procent.html' },
+        {'role' : USER, 'content' : 'Jak sprawdzić historię rachunku?' },
+        {'role' : ASSISTANT, 'content' : 'Jeśli chcesz sprawdzić historię płatności, kliknij w nazwę konta. Po wybraniu zakładki Historia rachunku zobaczysz szczegółową historię konta. Wpisz nazwę lub kwotę transakcji w oknie wyszukiwania, lub wybierz wyszukiwanie zaawansowane za pomocą opcji Pokaż filtry. W historii prezentujemy transakcje zgodnie z kolejnością ich wykonania. Jeśli dana transakcja nie została jeszcze zaksięgowana, po lewej stronie zobaczysz 🔒. Dla takich transakcji nie pokazujemy salda księgowego. Zobaczysz je dopiero po zaksięgowaniu transakcji. Jeśli chcesz sprawdzić, kiedy zaksięgowaliśmy transakcję, kliknij w nią i zobacz szczegóły.' },
+        {'role' : USER, 'content' : 'Jak połączyć się z infolinią?' },
+        {'role' : ASSISTANT, 'content' : 'Czy wiesz, że jeśli korzystasz z aplikacji Alior Mobile, skontaktujesz się ze mną najszybciej? 😊Wystarczy, że się zalogujesz do aplikacji mobilnej i tapniesz w Kontakt. Możesz także zadzwonić: 12 19 502 lub +48 12 370 70 00 (koszt połączenia zgodny z taryfą operatora).' },
+        {'role' : USER, 'content' : 'Jak zmienić PIN do karty?' },
+        {'role' : ASSISTANT, 'content' : 'Kod PIN do karty zmienisz jedynie, jeśli jesteś jej użytkownikiem.Możesz to zrobić w:    bankowości internetowej Alior Online, serwisie automatycznym na infolinii, bankomacie, który posiada taką opcję. Za zmianę w bankomacie możemy pobrać opłatę zgodną z Taryfą Opłat i Prowizji. Pokażę Ci, jak samodzielnie nadasz kod PIN. Wskaż, z którego systemu korzystasz:' },
+        {'role' : USER, 'content' : 'Co to jest program bezcenne chwile?' },
+        {'role' : ASSISTANT, 'content' : 'Program Mastercard Bezcenne Chwile to źródło wielu zniżek, atrakcyjnych nagród oraz ofert podróży w wyjątkowe zakątki świata. Płać swoją kartą Mastercard, a punkty same się zbiorą! Pamiętaj tylko o rejestracji w programie 😊 Możesz otrzymać: od 2 do 8 punktów za każde 5 zł wydane u partnerów programu oraz 1 punkt, jeśli wydasz 50 zł stacjonarnie lub online. Swoje punkty możesz sprawdzić i wymienić na nagrody w Alior Online lub aplikacji mobilnej Alior Mobile. Szczegółowe zasady przyznawania punktów znajdziesz w regulaminie programu oraz na stronie naszego banku: https://www.aliorbank.pl/priceless-specials.html' },
+        {'role' : USER, 'content' : 'Co to jest Alior Pay?' },
+        {'role' : ASSISTANT, 'content' : 'Alior Pay to limit kredytowy, z którym cofniesz na swoje konto w Alior Banku pieniądze za zrealizowane płatności. Korzystając z niego, odroczysz dowolną liczbę transakcji dokonanych w sklepach stacjonarnych i internetowych, wypłat z bankomatów, a także przelewów z konta.RSSO: 7,9%. Wybierz o czym chcesz dowiedzieć się więcej 😊' },
+        {'role' : USER, 'content' : 'Jak złożyć reklamacje?' },
+        {'role' : ASSISTANT, 'content' : 'Reklamację możesz złożyć na kilka sposobów: elektronicznie - w Alior Online - w zakładce Moje sprawy → Napisz do nas → Reklamacja lub w Alior Mobile - w górnym menu wybierz ikonę profil → Wiadomości → Reklamacja, telefonicznie - pod numerem 12 19 502 lub +48 12 370 70 00 (koszt połączenia zgodny z taryfą operatora), listownie - na adres: Alior Bank SA, ul. Łopuszańska 38D, 02-232 Warszawa, osobiście - w placówce - ich listę znajdziesz na naszej stronie: https://www.aliorbank.pl/placowki-i-bankomaty.html Pozostałe Informacje o reklamacjach umieściliśmy na naszej stronie: http://www.aliorbank.pl/dodatkowe-informacje/informacje/reklamacje.html' },
+        {'role' : USER, 'content' : 'Jak mogę anulować przelew?' },
+        {'role' : ASSISTANT, 'content' : 'K"Nie możemy wycofać zatwierdzonego przelewu krajowego (w złotówkach do banku w Polsce). Skontaktuj się z odbiorcą przelewu, a jeśli nie masz takiej możliwości, złóż u nas reklamację. Wtedy zapytamy za Ciebie odbiorcę przelewu, czy zgadza się na zwrot. Jeśli chcesz anulować przelew zagraniczny lub walutowy, który jest jeszcze w blokadzie na rachunku, możemy spróbować go odwołać. Nie możemy jednak dać Ci gwarancji, że się uda - zależy to od tego, na jakim etapie realizacji jest przelew. Za taką operację pobierzemy prowizję, zależną od wariantu Twojego konta, zgodnie z naszą Tabelą Opłat i Prowizji. Aby anulować przelew zagraniczny, złóż taką dyspozycję: na infolinii - 12 19 502 lub +48 12 370 70 00 (koszt połączenia zgodny z taryfą operatora), w oddziale - ich listę znajdziesz na naszej stronie: https://www.aliorbank.pl/placowki-i-bankomaty.html. Jeśli nie uda nam się anulować przelewu zagranicznego, możesz zawnioskować o jego zwrot poprzez reklamację. Za obsługę takiej reklamacji możemy pobrać opłatę, zgodnie z naszą Tabelą Opłat i Prowizji, którą znajdziesz na naszej stronie: https://www.aliorbank.pl/dodatkowe-informacje/przydatne-dokumenty/klienci-indywidualni.html#toip' },
         
     ]
 
